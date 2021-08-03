@@ -12,6 +12,8 @@
 > * vectorized process funcs, so multi-connections can be processed at one thread almost simutaneously
 >
 > * less configure
+>
+> * only support linux currently
 
 
 ## build
