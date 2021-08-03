@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HTML Online Visual Editer</title>
+<meta charset="utf-8">
+<meta name="keywords" content="bootstrap, editer, online, visual">
+<meta name="description" content="Online visual editer of html base on bootstrap jquery vue .etc">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/editer.css" />
+<link rel="stylesheet/less" type="text/less" href="less/editer.less" />
+
+<!--[if IE]>-->
+<script src="https://cdn.bootcss.com/babel-polyfill/7.2.5/polyfill.min.js"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="codemirror/lib/codemirror.css" />
+<link rel="stylesheet" href="codemirror/theme/midnight.css">
+<link rel="stylesheet" href="codemirror/theme/darcula.css">
+<link rel="stylesheet" href="codemirror/addon/dialog/dialog.css">
+
+<script src="codemirror/lib/codemirror.js"></script>
+<script src="codemirror/mode/javascript/javascript.js"></script>
+<script src="codemirror/keymap/vim.js"></script>
+
+<script src="codemirror/addon/dialog/dialog.js"></script>
+<script src="codemirror/addon/edit/matchbrackets.js"></script>
+<script src="codemirror/addon/scroll/annotatescrollbar.js"></script>
+<script src="codemirror/addon/search/matchesonscrollbar.js"></script>
+<script src="codemirror/addon/search/searchcursor.js"></script>
+<script src="codemirror/addon/search/match-highlighter.js"></script>
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/editer-preference.js"></script>
+</head>
+
+<body>
+
+<div class="editer">
+  <div class="editer-head">
+    <div class="button">green</div>
+  </div>
+  
+  
+  <div class="editer-body">
+    <div class="editer-body-control">
+      <!--control view-->
+      A
+    </div>
+    <div class="editer-body-resource">
+          <div id="resource-elems-bar" class="editer-body-bar">elements</div>
+          <div id="resource-elems" class="editer-body-content">
+
+            <div id="resource-elems-view" class="editer-body-view-scroll-base">
+              <!--resource-elems-view-->
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+            </div>
+
+          </div>
+
+          <div id="resource-list-bar" class="editer-body-bar">fileList</div>
+          <div id="resource-list" class="editer-body-content">
+
+            <div id="resource-list-view" class="editer-body-view-scroll-base">
+              <!--resource-list-view-->
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+              <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+
+            </div>
+
+          </div>
+    </div>
+    <div class="editer-body-edition">
+      <div id='left-slider-body-edition' class="editer-body-xslider"></div>
+      <div class="editer-body-edition-view">
+        <div id="visual-edition-bar"  class="editer-body-bar">files</div>
+        <div id="visual-edition" class="editer-body-edition-visual editer-body-content">
+          <div id="visual-edition-view" class="editer-body-view-scroll-base">
+            <!--edition-visual-view-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center" >heill</h1>
+    </div>
+    <div class="col-md-6">
+      <h1 class='text-center'>hi</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+</div>
+</div>
+
+          </div>
+        </div>
+        <div id="coding-edition-bar"  class="editer-body-bar">codeDetail</div>
+        <div id="coding-edition" class="editer-body-edition-coding editer-body-content">
+          <div id="coding-edition-view">
+            <!--edition-coding-view-->
+            <div id="code-edition-container">
+
+             <div id="code-edition-1" class="code-edition-sub">
+              <div class="code-edition-status-bar">
+                <button>button</button>
+              </div> 
+              <div class="code-edition-editer-content">
+                <form><textarea id="code" name="code"></textarea></form>
+              </div> 
+             </div>
+
+             <div id="code-edition-xslider-disable" class="code-edition-xslider-disable"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id='right-slider-body-edition' class="editer-body-xslider"></div>
+    </div>
+    <div class="editer-body-preview">
+      <div id="config-preview-bar" class="editer-body-bar">preview</div>
+      <div id="config-preview" class="editer-body-content">
+        <div id="config-preview-view" class="editer-body-view-scroll-base">
+          <!--preview-view-->
+
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+          <div>aasdfdddddddddddddddddddddddddddddddddb</div>
+
+        </div>
+      </div>
+
+      <div id="other-preview-bar" class="editer-body-bar">other</div>
+      <div id="other-preview" class="editer-body-content">
+        <div id="other-preview-view" class="editer-body-view-scroll-base">
+          <!--other-view-->
+
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+          <div>bbbbbbbbbbbbbbbbbbddddddddddddddccccccccccccccccc</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="editer-body-empty"></div>
+  </div>
+  
+  
+  <div class="editer-end">
+   <div>adfasdfasdfdddddddddddddddddddddddddddddddddd</div>
+  </div>
+
+</div>
+
+
+<script src="js/editer.js"></script>
+<script src="js/less.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+
+.hide{
+    display: none;
+}
+
+
+.button{
+    width: 3em;
+    height: 100%;
+    background: lightblue;
+}
+.button:hover{
+    background: rgb(157, 218, 238);
+}
+
+
