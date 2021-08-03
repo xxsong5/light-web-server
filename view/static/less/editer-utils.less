@@ -1,0 +1,133 @@
+@import "theme.less";
+
+
+.editer-flex-row{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.editer-flex-colum{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.editer-flex-colum-align-center{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.editer-flex-colum-align-center-center{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.editer-flex-item-grow(@grow:1){
+    flex-grow: @grow;
+    flex-shrink: @grow;
+}
+
+
+html, body, .editer{
+    background-color: @editer-bkg-color;
+}
+.editer-body{
+    background-color: @editer-bkg-content-color;
+}
+.editer-body-control, .editer-body-empty{
+    background-color: @editer-bkg-color;
+}
+
+.editer-body-xslider{
+    background-color: @editer-bkg-bar-color;
+    box-shadow: 0px 0px 3px @editer-shadow-color;
+}
+.editer-body-xslider:hover{
+    box-shadow: 0px 0px 5px @editer-shadow-active-color;
+    cursor: w-resize;
+}
+
+.editer-body-bar{
+    background-color: @editer-bkg-bar-color;
+    color: @editer-txt-bar-color;
+    font-size: large;
+}.editer-body-bar:hover{
+    box-shadow: 0px 0px 3px @editer-shadow-active-color inset;
+    color: @editer-txt-bar-color;
+    font-size: large;
+}
+.editer-body-content{
+    background-color: @editer-bkg-content-color;
+}
+
+
+.editer-body-view-scroll-base{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+
+    scrollbar-face-color: @editer-scroll-bar-bkg-color;
+    scrollbar-highlight-color: @editer-scroll-bar-bkg-color;
+    scrollbar-3dlight-color: @editer-scroll-bar-bkg-color;
+    scrollbar-darkshadow-color: @editer-scroll-bar-bkg-color;
+    scrollbar-Shadow-color: @editer-scroll-bar-bkg-color;
+    scrollbar-arrow-color: @editer-scroll-bar-bkg-color;
+    scrollbar-track-color: @editer-scroll-bar-bkg-color;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.editer-body-view-scroll-base:hover{
+  scrollbar-face-color: @editer-scroll-bar-color;
+}
+
+.editer-body-view-scroll-base::-webkit-scrollbar-corner {
+  background: @editer-scroll-bar-bkg-color;
+}
+.editer-body-view-scroll-base::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+  background: @editer-scroll-bar-bkg-color;
+}
+.editer-body-view-scroll-base::-webkit-scrollbar-thumb {
+  background: @editer-scroll-bar-bkg-color
+}
+.editer-body-view-scroll-base:hover::-webkit-scrollbar-thumb {
+  background:@editer-scroll-bar-color;
+}
+
+.editer-body-view-scroll-base::-webkit-scrollbar-track {
+  background: @editer-scroll-bar-bkg-color;
+}
+
+.code-edition-sub > .code-edition-status-bar, #code-edition-container > .code-edition-xslider, #code-edition-container > .code-edition-xslider-disable{
+  background-color: rgb(58, 57, 57); 
+}
+#code-edition-container > .code-edition-xslider{
+  cursor: w-resize;
+}
+
+
+
+
+
+/*
+.CodeMirror-focused .cm-matchhighlight {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFklEQVQI12NgYGBgkKzc8x9CMDAwAAAmhwSbidEoSQAAAABJRU5ErkJggg==);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}.cm-matchhighlight {background-color: rgba(100,100,100,0.3)}
+
+//.CodeMirror .CodeMirror-cursors {background-color: green}
+.CodeMirror-selection-highlight-scrollbar {background-color: green}
+*/

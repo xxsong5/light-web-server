@@ -1,0 +1,224 @@
+@import "editer-utils.less";
+
+html,body{
+    height:99%;
+}
+
+.editer{
+    width:  100%;
+    height: 100%;
+    .editer-flex-colum;
+}
+.editer-head, .editer-end, .editer-body{
+    max-width: 100%;
+    width : 100%;
+}
+.editer-head{
+    height: 3em;
+    .editer-flex-item-grow(0);
+}
+.editer-body{
+    min-height: 0;
+    height: 100%;
+    .editer-flex-item-grow;
+}
+.editer-end{
+    height: 2em;
+    .editer-flex-item-grow(0);
+}
+
+.editer-body{
+    .editer-flex-row;
+}
+.editer-body-control, .editer-body-resource, .editer-body-edition, .editer-body-preview, .editer-body-empty{
+    height: 100%;
+    max-height: 100%;
+}
+.editer-body-control{
+    width: 3em;
+    .editer-flex-item-grow(0);
+}
+.editer-body-empty{
+    width: 1em;
+    .editer-flex-item-grow(0);
+}
+.editer-body-resource{
+    width:15%;
+    overflow: hidden;
+    .editer-flex-item-grow(0);
+}
+.editer-body-edition{
+    width:65%;
+    .editer-flex-item-grow;
+}
+.editer-body-preview{
+    width:20%;
+    .editer-flex-item-grow(0);
+}
+
+
+.editer-body-edition{
+    min-width: 0;
+    min-height: 0;
+    .editer-flex-row;
+}
+.editer-body-edition-view, .editer-body-xslider{
+    max-height: 100%;
+    height: 100%;
+}
+.editer-body-edition-view{
+    .editer-flex-item-grow;
+}
+.editer-body-xslider{
+    width: .3em;
+    .editer-flex-item-grow(0);
+}
+
+
+
+.editer-body-resource{
+    .editer-flex-colum;
+    overflow: hidden;
+}
+#resource-elems, #resource-list, #resource-elems-bar, #resource-list-bar{
+    max-width:100%;
+    min-height: 0;
+    width: 100%;
+}
+#resource-elems{
+    height: 100%;
+    .editer-flex-item-grow;
+}
+#resource-list{
+    height: 30%;
+    .editer-flex-item-grow(0);
+}
+#resource-elems-bar{
+    height: 1.4em;
+    .editer-flex-item-grow(0);
+}
+#resource-list-bar{
+    height: 1.4em;
+    .editer-flex-item-grow(0);
+}
+
+
+.editer-body-edition-view{
+    min-width: 0;
+    min-height: 0;
+    width: 100%;
+    .editer-flex-colum;
+}#visual-edition-bar,#visual-edition, #coding-edition-bar, #coding-edition{
+    max-width:100%;
+    width: 100%;
+    overflow: hidden;
+}
+#visual-edition{
+    min-height: 0;
+    .editer-flex-item-grow;
+} #visual-edition-view{
+    width: 100%;
+    min-width: 0;
+}
+#visual-edition-bar,#coding-edition-bar{
+    height: 1.4em;
+    .editer-flex-item-grow(0);
+}
+#coding-edition{
+    display: none;
+    height: 40px;
+    .editer-flex-item-grow(0);
+}#coding-edition-view{
+    height: 100%;
+    width: 100%;
+}
+
+.editer-body-preview{
+    min-height: 0;
+    .editer-flex-colum;
+}#config-preview-bar,#config-preview,#other-preview-bar,#other-preview{
+    max-width:100%;
+    width: 100%;
+    overflow: hidden;
+}
+#config-preview{
+    .editer-flex-item-grow;
+}
+#config-preview-bar,#other-preview-bar{
+    height: 1.4em;
+    .editer-flex-item-grow(0);
+}
+#other-preview{
+    display: none;
+    height: 40px;
+    .editer-flex-item-grow(0);
+}
+
+
+.editer-body-control
+{
+    .editer-flex-colum-align-center;
+}
+
+.editer-body-control-theme
+{
+    width:  2em;
+    height: 2em;
+    border-radius: 1em;
+    box-shadow: @editer-button-border-shadow;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    .editer-flex-item-grow(0);
+}
+
+#theme-face-color-dark
+{
+    background-color: rgb(24, 23, 23);
+}
+#theme-face-color-light
+{
+    background-color: rgb(212, 209, 209);
+}
+#theme-face-color-soft
+{
+    background-color:lightgreen;
+}
+#theme-face-color-dark:hover
+{
+    background-color: rgb(114, 114, 114);
+}
+#theme-face-color-light:hover
+{
+    background-color: rgb(114, 114, 114);
+}
+#theme-face-color-soft:hover
+{
+    background-color:rgb(99, 243, 99);
+}
+#resource-elems-view ul li{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+#resource-elems-view ul li:hover{
+    cursor:pointer;
+    box-shadow: @editer-button-border-shadow;
+    border-radius: 1em;
+}
+
+#visual-edition-view table tr td{
+    color: @editer-txt-color;
+    overflow:visible;
+}
+#visual-edition-view table tr:nth-child(2n+1) {
+    background-color: rgba(182, 178, 178, 0.5);
+    
+}
+.editer-end {
+    div{
+        width: 8em;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        a{text-decoration: none; color: rgba(182, 178, 178, 0.884);}
+    }
+}
