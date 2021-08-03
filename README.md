@@ -1,9 +1,9 @@
 # a web server implemented with c++
 
 
-## feature
+## features
 
-> * light weight, easy-use
+> * light weight, easy-use, no third-partis
 >
 > * memory cache controll,  using mmap for larger pages,  new designed small memory allocator,  automatic cache cleaner, multi-thread-access
 >
